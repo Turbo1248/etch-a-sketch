@@ -1,0 +1,31 @@
+:root {
+    --gridRows: 0;
+    --gridCols: 0;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-rows: repeat(var(--gridRows), minmax(0,1fr));
+    grid-template-columns: repeat(var(--gridCols), minmax(0,1fr));
+}
+
+.cells {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    aspect-ratio: 1/1;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+}
+
+button {
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: darkblue;
+}
